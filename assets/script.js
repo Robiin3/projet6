@@ -54,12 +54,12 @@ function updateSlide() {
 // Ajouter des écouteurs d'événements
 arrowLeft.addEventListener('click', () => {
 	console.log('Flèche gauche cliquée !'); // tester le fonctionnement des event listeners
-	currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Aller à l'image précédente
-	updateSlide(); // Mettre à jour l'image
+	currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Aller à la slide précédente
+	updateSlide(); // Mettre à jour la slide
   });
   
   arrowRight.addEventListener('click', () => {
 	console.log('Flèche droite cliquée !'); // tester le fonctionnement des event listeners
-	currentIndex = (currentIndex + 1) % slides.length; // Aller à l'image suivante
-	updateSlide(); // Mettre à jour l'image
+	currentIndex = (currentIndex + 1) % slides.length; // Aller à la slide suivante
+	updateSlide(); // Mettre à jour la slide
   });
